@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profissionais - VidaPlus SGHSS</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo-dot"></span>
+      <span class="brand-text">VidaPlus SGHSS</span>
+    </div>
+    <button class="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="pacientes.html">Pacientes</a>
+      <a href="profissionais.html" class="active">Profissionais</a>
+      <a href="administracao.html">Administração</a>
+      <a href="telemedicina.html">Telemedicina</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <h1>Profissionais de Saúde</h1>
+      <input type="search" id="buscaProfissionais" class="input" placeholder="Buscar profissional..." />
+    </section>
+
+    <section class="grid grid-list" id="listaProfissionais">
+      <article class="card profissional-card" data-nome="Dr. Ricardo Lima">
+        <h2>Dr. Ricardo Lima</h2>
+        <p>Cardiologista</p>
+        <button class="btn-secundario ver-agenda">Ver agenda</button>
+        <div class="detalhes oculto">
+          <p><strong>Próximos horários:</strong></p>
+          <ul>
+            <li>Hoje - 14:00</li>
+            <li>Amanhã - 09:30</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card profissional-card" data-nome="Dra. Maria Alves">
+        <h2>Dra. Maria Alves</h2>
+        <p>Pediatra</p>
+        <button class="btn-secundario ver-agenda">Ver agenda</button>
+        <div class="detalhes oculto">
+          <p><strong>Próximos horários:</strong></p>
+          <ul>
+            <li>Hoje - 10:00</li>
+            <li>Hoje - 16:00</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

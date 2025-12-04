@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacientes - VidaPlus SGHSS</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo-dot"></span>
+      <span class="brand-text">VidaPlus SGHSS</span>
+    </div>
+    <button class="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="pacientes.html" class="active">Pacientes</a>
+      <a href="profissionais.html">Profissionais</a>
+      <a href="administracao.html">Administração</a>
+      <a href="telemedicina.html">Telemedicina</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <h1>Pacientes</h1>
+      <input type="search" id="buscaPacientes" class="input" placeholder="Buscar paciente..." />
+    </section>
+
+    <section class="grid grid-list" id="listaPacientes">
+      <article class="card paciente-card" data-nome="Ana Costa">
+        <h2>Ana Costa</h2>
+        <p>Histórico de consultas e exames.</p>
+        <button class="btn-secundario ver-detalhes">Ver detalhes</button>
+        <div class="detalhes oculto">
+          <p><strong>Última consulta:</strong> 12/09/2025</p>
+          <p><strong>Status:</strong> Em acompanhamento</p>
+        </div>
+      </article>
+
+      <article class="card paciente-card" data-nome="Rafael Silva">
+        <h2>Rafael Silva</h2>
+        <p>Paciente com acompanhamento em cardiologia.</p>
+        <button class="btn-secundario ver-detalhes">Ver detalhes</button>
+        <div class="detalhes oculto">
+          <p><strong>Última consulta:</strong> 03/08/2025</p>
+          <p><strong>Status:</strong> Estável</p>
+        </div>
+      </article>
+
+      <article class="card paciente-card" data-nome="Mariana Rocha">
+        <h2>Mariana Rocha</h2>
+        <p>Acompanhamento em exames laboratoriais.</p>
+        <button class="btn-secundario ver-detalhes">Ver detalhes</button>
+        <div class="detalhes oculto">
+          <p><strong>Último exame:</strong> 25/07/2025</p>
+          <p><strong>Status:</strong> Aguardando retorno</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
